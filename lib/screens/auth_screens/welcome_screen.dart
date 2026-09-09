@@ -94,11 +94,11 @@ class WelComeScreen extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              if (page != images.length - 1)
+                              if (page != images.length )
                                 InkWell(
                                   onTap: () {
                                     pageController.animateToPage(
-                                      images.length - 1,
+                                      images.length,
                                       duration: const Duration(milliseconds: 300),
                                       curve: Curves.easeInOut,
                                     );
@@ -177,18 +177,8 @@ class WelComeScreen extends StatelessWidget {
                               duration: const Duration(milliseconds: 300),
                               margin: const EdgeInsets.only(right: 8),
                               height: 8,
-                              width: isSelected ? 24 : 8,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                gradient: isSelected
-                                    ? const LinearGradient(
-                                        colors: [
-                                          AppColor.gradientColorTop,
-                                          AppColor.gradientColorCenter,
-                                          AppColor.gradientColorBottom,
-                                        ],
-                                      )
-                                    : null,
                                 color: isSelected
                                     ? null
                                     : AppColor.darkGreyColor.withOpacity(.3),
