@@ -53,7 +53,7 @@ class SelectionInterestScreen extends StatelessWidget {
                   ),
                   Obx(
                     () => Text(
-                      "${controller.selectedSelectionCount} / 3 selected",
+                      "0 / 3 selected",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                       ),

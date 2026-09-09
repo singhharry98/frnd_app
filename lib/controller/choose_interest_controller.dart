@@ -101,7 +101,7 @@ class ChooseInterestController extends GetxController {
     if (selectedSelectionInterest.contains(title)) {
       selectedSelectionInterest.remove(title);
     } else {
-      selectedSelectionInterest.add(title);
+
     }
   }
 
