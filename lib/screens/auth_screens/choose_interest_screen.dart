@@ -55,7 +55,7 @@ class ChooseInterestScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Text(
-                          "${controller.selectedCount} / 5 selected",
+                          "0 / 5 selected",
                         ),
                       )),
                   Obx(

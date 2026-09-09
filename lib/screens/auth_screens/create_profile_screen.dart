@@ -92,9 +92,8 @@ class CreateProfileScreen extends StatelessWidget {
                                                     child: Icon(Icons.panorama),
                                                   )
                                                   : ClipOval(
-                                                    child: Image.file(
-                                                        controller
-                                                            .profileImage.value!,
+                                                    child: Image.asset(
+                                                        "",
                                                         fit: BoxFit.cover,
                                                       ),
                                                   ),
