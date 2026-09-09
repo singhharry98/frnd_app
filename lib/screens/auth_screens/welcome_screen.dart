@@ -207,22 +207,7 @@ class WelComeScreen extends StatelessWidget {
                       padding: EdgeInsets.zero,
                     ),
                     onPressed: () {
-                      final currentPage = pageController.page?.round() ?? 0;
-                      print("object ${currentPage}");
-                      if (currentPage < images.length - 1) {
-                        pageController.nextPage(
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
-                        );
-                      } else {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>  LoginScreen(),
-                          ),
-                        );
-                        // Navigate to Login Screen
-                      }
+
                     },
                     child: Ink(
                       decoration: BoxDecoration(
