@@ -12,28 +12,7 @@ class ChooseInterestController extends GetxController {
 
   Rx<File?> profileImage = Rx<File?>(null);
 
-  final interests = [
-    InterestModel(title: "Music", emoji: "🎵"),
-    InterestModel(title: "Movies", emoji: "🎬"),
-    InterestModel(title: "Gaming", emoji: "🎮"),
-    InterestModel(title: "Coffee", emoji: "☕"),
-    InterestModel(title: "Food", emoji: "🍕"),
-    InterestModel(title: "Books", emoji: "📚"),
-    InterestModel(title: "Travel", emoji: "✈️"),
-    InterestModel(title: "Fitness", emoji: "🏋️"),
-    InterestModel(title: "Pets", emoji: "🐶"),
-    InterestModel(title: "Photography", emoji: "📷"),
-    InterestModel(title: "Art", emoji: "🎨"),
-    InterestModel(title: "Memes", emoji: "😂"),
-    InterestModel(title: "Nature", emoji: "🌱"),
-    InterestModel(title: "Business", emoji: "💼"),
-    InterestModel(title: "Podcasts", emoji: "🎙"),
-    InterestModel(title: "Anime", emoji: "🍿"),
-    InterestModel(title: "Sports", emoji: "⚽"),
-    InterestModel(title: "Astrology", emoji: "🌙"),
-    InterestModel(title: "Theatre", emoji: "🎭"),
-    InterestModel(title: "Wellness", emoji: "🧘"),
-  ].obs;
+  final interests = [].obs;
 
   final RxList<String> selected = <String>[].obs;
   final RxList<String> selectedSelectionInterest = <String>[].obs;
